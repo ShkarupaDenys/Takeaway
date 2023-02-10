@@ -1,0 +1,24 @@
+// placeholders
+%gradient {
+  background: linear-gradient(to right, $gradient-color-1, $gradient-color-2);
+}
+
+%borderRadiusGradient {
+  position: absolute;
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+%gradientTransparentToBlue {
+  background: linear-gradient(to right, transparent, $gradient-color-2);
+}
+
+%font-gradient {
+  @extend %gradient;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

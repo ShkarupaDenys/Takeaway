@@ -1,0 +1,45 @@
+//  regular
+
+body {
+  font-family: $montserrat;
+  margin: 0;
+  background-color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-heading {
+  font-size: 72px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $light-blue;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-blue {
+  color: $light-blue;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
