@@ -11,10 +11,15 @@
 
 @import './utils/variables';
 @import './utils/extends';
+
+// components
 @import './utils/regular';
 @import './components/buttons';
 @import './components/header';
+
+// sections
 @import './sections/tiers';
+@import './sections/road-map';
 
 // Heading
 .slide-title {
@@ -66,7 +71,6 @@
 }
 
 // Style
-
 .hor-slide {
     position: relative;
     padding: 30px 0 60px 0;

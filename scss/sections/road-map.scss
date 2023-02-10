@@ -1,0 +1,54 @@
+// road-map
+.road-map {
+  padding-top: 30px;
+  height: 100vh;
+
+  &__heading {
+    margin-bottom: 90px;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    position: relative;
+    padding: 60px;
+    width: 100%;
+
+    &::before {
+      @extend %gradient;
+
+      content: '';
+      border-radius: 35px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.102;
+      box-shadow: 0px 8px 21px 0px rgba(0, 0, 0, 0.004);
+    }
+  }
+
+  &__card-title {
+    font-size: 42px;
+    line-height: 100%;
+    margin-bottom: 58px;
+  }
+
+  &__item {
+    color: $light-white;
+    font-size: 24px;
+    line-height: 100%;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $light-blue;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
